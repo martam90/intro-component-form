@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    max-width: 1440px;
+    padding: $spacing + 50;
+    background-image: url("../images/bg-intro-desktop.png");
+
+    .container {
+      flex: 1;
+      order: 1;
+      align-self: center;
+      margin-right: $spacing;
+      width: 300px;
+
+      .heading--large,
+      .text--white {
+        text-align: left;
+      }
+    }
+
+    .container-form {
+      flex: 1;
+      order: 2;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1 class="container__heading heading--large">Learn to code by watching others</h1>
+      <p class="container__heading text--white">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable.
+      </p>
+    </div>
+
+    <div class="container-form">
+      <button class="btn btn__primary"><b>Try it free 7 days</b> then $20/mo. thereafter</button>
+
+      <form method="POST" class="form" id="form">
+        <div class="input-group">
+          <input class="form__input" type="text" id="fname" name="firstname" aria-label="firstname" placeholder="First Name">
+          <img class="icon icon--error" src="images/icon-error.svg" alt="icon red">
+        </div>
+        <p class="form__input error" id="first-name-error"></p>
+
+        <div class="input-group">
+          <input class="form__input" type="text" id="lname" name="lastname" aria-label="lastname" placeholder="Last Name">
+          <img class="icon icon--error" src="images/icon-error.svg" alt="icon red">
+        </div>
+        <p class="form__input error" id="last-name-error"></p>
+
+        <div class="input-group">
+          <input class="form__input" type="text" id="email" name="email" aria-label="email" placeholder="Email Address">
+          <img class="icon icon--error" src="images/icon-error.svg" alt="icon red">
+        </div>
+        <p class="form__input error" id="email-error"></p>
+
+        <div class="input-group">
+          <input class="form__input" type="password" id="password" name="password" aria-label="password" placeholder="Password">
+          <img class="icon icon--error" src="images/icon-error.svg" alt="icon red">
+        </div>
+        <p class="form__input error" id="password-error"></p>
+
+        <button class="btn btn__success">Claim your free trial</button>
+        <p class="form__text text--small">By clicking the button, you are agreeing to our <span class="span__red">Terms and Services</span></p>
+      </form>
+    </div>
+
+  </div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Marta</a>.
+    </p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
